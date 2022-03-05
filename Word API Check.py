@@ -28,6 +28,7 @@ reply = {}
 def connected_to_the_internet():
     try:  
         url = "https://www.google.co.uk"
+        print(check_internet)
         timeout = 5
         time.sleep(3)
         request = requests.get(url, timeout=timeout)
