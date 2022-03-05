@@ -24,10 +24,10 @@ output = ""
 verdict = ""
 reply = {}
 
+# See if we are connected to the internet.
 def connected_to_the_internet():
-    try:  # See if we are connected to the internet.
+    try:  
         url = "https://www.google.co.uk"
-        print(check_internet)
         timeout = 5
         time.sleep(3)
         request = requests.get(url, timeout=timeout)
@@ -40,8 +40,10 @@ try:
     if connected_to_the_internet():  # We can use the online word API.
         # Get the user input.
         user_input = input("Please Key In A Word To Check: ")
+        
         # Break up the user input into segments (if possible).
         word_list = segment(user_input)
+        
         # Loop through each segment and run it through the word API.
         for word in word_list:
 
