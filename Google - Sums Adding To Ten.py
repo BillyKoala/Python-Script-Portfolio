@@ -24,6 +24,7 @@ try:
                         found += ", " if comma_count > 0  else ""
         comma_count -= 1
     found += "]"
+    
     print(output + found)
 
 except Exception as e:
