@@ -34,7 +34,7 @@ try:
 
         sentence.count(word)
 
-        word_dict[word] = sentence.count(word)
+        word_dict[word] = 1 if sentence.count(word) == 0 else sentence.count(word)
 
     # Finally, sort the words into alphabetical order.
     word_items = word_dict.items()
