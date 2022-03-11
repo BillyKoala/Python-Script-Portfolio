@@ -71,7 +71,6 @@ try:
             print("\nAll Profanity Has Been Asterisked.")
 
         # Print out the morse code conversion complete with header.
-
         print(f"\nUser Input: {user_input}\n\n{morse_code_conversion}")
 
 except Exception as e:
