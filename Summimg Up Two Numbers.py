@@ -18,7 +18,7 @@ def count_ratings():
             count_ones += 1 if num == 1 else 0 
             count_fives += 1 if num == 5 else 0 
 
-        print("Num Of 1\'s = {}\nNum Of 5\'s = {}".format(str(count_ones), str(count_fives)))
+        print(f"Num Of 1\'s = {count_ones}\nNum Of 5\'s = {count_fives}")
  
     except Exception as e: 
         print(e) 
