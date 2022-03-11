@@ -10,7 +10,7 @@ try:
     # Check each character. If it is in the ASCII range between 60 and 90 then increment the counter.
     for i in range(len(sentence)): count += 1 if ord(sentence[i]) in range(65, 90) else 0
 
-    print("There are {} capital letters in the word \'{}\'".format(count, sentence))
+    print(f"There are {count} capital letters in the word \'{sentence}\'")
 
 except Exception as e:
     print(e)
