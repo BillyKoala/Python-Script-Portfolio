@@ -61,9 +61,9 @@ try:
 
         # Deliberate the verdict.
         if dict_returned:
-            verdict = "\'{user_input}\' cannot be segmented into a word dictionary. {word_list}")
+            verdict = f"\'{user_input}\' cannot be segmented into a word dictionary. {word_list}")
         else:
-            verdict = "\'{user_input}\' can be segmented into a word dictionary. {word_list}")
+            verdict = f"\'{user_input}\' can be segmented into a word dictionary. {word_list}")
 
         print(verdict)
 
