@@ -7,7 +7,6 @@ Decimal points are removed to streamline the processing.
 e.g. £6.50 and 650 are both treated the same.
 """
 
-from tkinter import *
 from tkinter import messagebox
 
 # Define some local variables here.
