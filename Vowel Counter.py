@@ -19,7 +19,7 @@ try:
         vowel_count += 1 if ord(string_to_check[i]) in vowel_ascii_numbers else 0
 
     # Print the result.
-    print("There are {} vowels in \'{}\' ".format(vowel_count, string_to_check))
+    print(f"There are {vowel_count} vowels in \'{string_to_check}\'")
 
 except Exception as e:
     print(e)
