@@ -29,9 +29,8 @@ try:
         sentence_spell_checked += str(TextBlob(word).correct())
         sentence_spell_checked += " " if (counter < len(sentence) - 1) else ""
         counter += 1
-
-    print("Original Sentence: " + bad_sentence)
-    print("Spell Checked Sentence: " + sentence_spell_checked)
+    
+    print(f"Original Sentence: {bad_sentence}\nSpell Checked Sentence: {sentence_spell_checked}"
 
 except Exception as e:
     print(e)
