@@ -41,7 +41,7 @@ try:
     words_sorted = sorted(word_items)
 
     # Print
-    print("\nSENTENCE: {}\n\nSENTENCE WORD COUNT: {}".format(sentence, words_sorted))
+    print(f"\nSENTENCE: {sentence}\n\nSENTENCE WORD COUNT: {words_sorted}")
 
 except Exception as e:
     print(e)
