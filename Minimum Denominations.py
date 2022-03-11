@@ -2,7 +2,7 @@
 Billy Knight - January 2022
 
 This module will calculate the minimum denominations
-required for change given. All UK denominations are included.
+required for change given. All UK denominations are used.
 Decimal points are removed to streamline the processing.
 e.g. £6.50 and 650 are both treated the same.
 """
