@@ -19,11 +19,11 @@ try:
 
         last_four_digits = cc_no[12:16]  # Get the last 4 digits of the card number.
 
-        print("Card Number: " + asterisk_string + last_four_digits)  # Output the reformatted card number.
+        print(f"Card Number: {asterisk_string}{last_four_digits}")  # Output the reformatted card number.
 
     else:
         # Incorrect number of digits input.
-        print("\nCard Length Error\n\n" + text_request)
+        print(f"\nCard Length Error: {text_request}")
 
 except Exception as e:
     print(e)
