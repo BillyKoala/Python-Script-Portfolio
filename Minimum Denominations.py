@@ -1,6 +1,6 @@
+
 """
 Billy Knight - January 2022
-
 This module will calculate the minimum denominations
 required for change given. All UK denominations are included.
 Decimal points are removed to streamline the processing.
@@ -19,6 +19,9 @@ remainder = 0
 
 change = input("Please Enter Your Change Amount: ")
 
+# If a decimal point has been input, remove it. We are only using pence from here.
+change = change.replace(".", "") if "." in str(change) else change
+
 if change.isnumeric():
     """
     Preserve the original user input for 
@@ -26,11 +29,9 @@ if change.isnumeric():
     """
     static_change = change
 
-    # If a decimal point has been input, remove it. We are only using pence from here.
-    change = change.replace(".", "") if "." in str(change) else change
     change = int(change)
 
-    if change < 100: # We are managing change denominations less than £1 here.
+    if change < 100: # We are managing change denominations of less than £1 here.
         try:
             # Append a header to the change_given array.
             change_given.append("Minimum denominations for " + static_change + "p change.\n")
